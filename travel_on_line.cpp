@@ -17,19 +17,34 @@ travel_on_line::travel_on_line(QWidget *parent,QString name)
     setWindowTitle("云游"+provinceName);
     ima->setFixedSize(400, 528); // 设置头像标签的固定大小
     ima->setAlignment(Qt::AlignCenter); // 添加边框以示预留空间
+    ima->setStyleSheet("QLabel { background-color: #F0F0F0; border: 1px solid #CCCCCC; }");
 
-    QString filePath=QApplication::applicationDirPath()+"/"+this->provinceName+"pictureshow0"+".txt";
-    QFile file(filePath);
-    if(file.open(QIODevice::ReadOnly)){
-        QTextStream in(&file);
-        in>>num;
-        in.readLine();
-        while(!in.atEnd()){
-            image.append(in.readLine());
+    num=5;
+    for(int i=0;i<5;i++){
+        QString ins;
+        QString x;
+        switch (i) {
+        case 0:x="1";break;
+        case 1:x="2";break;
+        case 2:x="3";break;
+        case 3:x="4";break;
+        case 4:x="5";break;
+        default:
+            break;
         }
-        file.close();
+        ins=QApplication::applicationDirPath()+"/"+this->provinceName+" ("+x+").jpg";
+        image.append(ins);
     }
 
+    pic->setText("GO!");
+    pic->move(140,530);
+    pic->setText("GO!");
+    pic->setStyleSheet("QPushButton "
+                       "{ background-color: #4CAF50;"
+                       " color: white; border: none; padding: 10px 20px;"
+                       " text-align: center; text-decoration: none;"
+                       " display: inline-block; font-size: 16px; margin: 4px 2px; cursor: pointer; border-radius: 4px; }");
+    QVBoxLayout *layout = new QVBoxLayout(this);
     pic->setText("GO!");
     pic->move(140,530);
     resize(400,550);
