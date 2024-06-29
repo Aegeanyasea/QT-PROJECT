@@ -1,0 +1,15 @@
+release/chinamapwidget.o
+release/chinamapwidgetobject.o
+release/chinamapwidgetobjectpoint.o
+release/main.o
+release/mainwindow.o
+release/provinceinfodialog.o
+release/provincerec.o
+release/travel_on_line.o
+release/moc_chinamapwidget.o
+release/moc_chinamapwidgetobject.o
+release/moc_chinamapwidgetobjectpoint.o
+release/moc_mainwindow.o
+release/moc_provinceinfodialog.o
+release/moc_provincerec.o
+release/moc_travel_on_line.o

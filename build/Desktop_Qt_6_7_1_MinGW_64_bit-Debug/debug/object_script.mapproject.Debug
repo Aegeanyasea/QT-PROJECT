@@ -1,0 +1,15 @@
+debug/chinamapwidget.o
+debug/chinamapwidgetobject.o
+debug/chinamapwidgetobjectpoint.o
+debug/main.o
+debug/mainwindow.o
+debug/provinceinfodialog.o
+debug/provincerec.o
+debug/travel_on_line.o
+debug/moc_chinamapwidget.o
+debug/moc_chinamapwidgetobject.o
+debug/moc_chinamapwidgetobjectpoint.o
+debug/moc_mainwindow.o
+debug/moc_provinceinfodialog.o
+debug/moc_provincerec.o
+debug/moc_travel_on_line.o
