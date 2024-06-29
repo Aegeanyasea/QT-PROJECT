@@ -1,0 +1,6 @@
+5
+D:/qtfile/mapproject/bin/1.jpg
+D:/qtfile/mapproject/bin/2.jpg
+D:/qtfile/mapproject/bin/3.jpg
+D:/qtfile/mapproject/bin/4.jpg
+D:/qtfile/mapproject/bin/5.jpg
